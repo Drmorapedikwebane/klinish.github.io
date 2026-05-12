@@ -32,3 +32,52 @@ form.addEventListener("submit", function(e) {
   }, 4000);
 
 });
+
+
+
+
+// LOGIN
+
+const loginForm = document.getElementById("loginForm");
+
+if(loginForm){
+
+  loginForm.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    const loginMessage =
+      document.getElementById("loginMessage");
+
+    loginMessage.classList.remove("hidden");
+
+    setTimeout(() => {
+      window.location.href = "dashboard.html";
+    }, 1500);
+
+  });
+
+}
+
+// COPY REFERRAL LINK
+
+function copyReferral(){
+
+  const referralInput =
+    document.getElementById("referralLink");
+
+  referralInput.select();
+  referralInput.setSelectionRange(0, 99999);
+
+  navigator.clipboard.writeText(referralInput.value);
+
+  const copyMessage =
+    document.getElementById("copyMessage");
+
+  copyMessage.classList.remove("hidden");
+
+  setTimeout(() => {
+    copyMessage.classList.add("hidden");
+  }, 3000);
+
+}
