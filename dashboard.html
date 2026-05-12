@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Affiliate Dashboard</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">AffiliatePro</div>
+
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="products.html">Products</a>
+      <a href="#">Analytics</a>
+      <a href="index.html">Logout</a>
+    </nav>
+  </header>
+
+  <section class="dashboard-section">
+
+    <h1 class="dashboard-title">
+      Affiliate Dashboard
+    </h1>
+
+    <div class="dashboard-grid">
+
+      <div class="dashboard-stat">
+        <h2>$12,480</h2>
+        <p>Total Earnings</p>
+      </div>
+
+      <div class="dashboard-stat">
+        <h2>348</h2>
+        <p>Total Sales</p>
+      </div>
+
+      <div class="dashboard-stat">
+        <h2>1,250</h2>
+        <p>Clicks</p>
+      </div>
+
+      <div class="dashboard-stat">
+        <h2>84%</h2>
+        <p>Conversion Rate</p>
+      </div>
+
+    </div>
+
+    <div class="referral-box">
+
+      <h2>Your Referral Link</h2>
+
+      <div class="referral-input">
+
+        <input
+          type="text"
+          id="referralLink"
+          value="https://affiliatepro.com/ref/john123"
+          readonly
+        >
+
+        <button onclick="copyReferral()" class="btn btn-primary">
+          Copy
+        </button>
+
+      </div>
+
+      <div id="copyMessage" class="success-message hidden">
+        🔗 Referral link copied!
+      </div>
+
+    </div>
+
+  </section>
+
+  <script src="javascript.js"></script>
+
+</body>
+</html>
