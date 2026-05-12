@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AffiliatePro - Login</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="auth-container">
+
+    <div class="auth-card">
+
+      <h1>Welcome Back</h1>
+
+      <p>Login to your affiliate account</p>
+
+      <form id="loginForm">
+
+        <input
+          type="email"
+          id="loginEmail"
+          placeholder="Email Address"
+          required
+        >
+
+        <input
+          type="password"
+          id="loginPassword"
+          placeholder="Password"
+          required
+        >
+
+        <button type="submit" class="btn btn-primary auth-btn">
+          Login
+        </button>
+
+      </form>
+
+      <div id="loginMessage" class="success-message hidden">
+        ✅ Login successful
+      </div>
+
+      <div class="auth-links">
+        <a href="index.html">← Back Home</a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="javascript.js"></script>
+
+</body>
+</html>
